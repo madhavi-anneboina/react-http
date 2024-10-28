@@ -7,12 +7,13 @@ import HookCounter from './components/HookCounter';
 import FunctionForm from './components/FunctionForm';
 import ClassCounterOne from './components/ClassCounterOne';
 import HookCounterOne from './components/HookCounterOne';
+import ClassMouse from './components/ClassMouse';
+import HookMouse from './components/HookMouse';
 
 function App() {
   return (
     <div className="App">
-      
-       <HookCounterOne />
+      <HookMouse />
     </div>
   );
 }

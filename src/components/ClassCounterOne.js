@@ -11,8 +11,11 @@ import React, { Component } from 'react'
     componentDidMount (){
         document.title = `Cliked ${this.state.count} times`
     }
-    componentDidUpdate(){
+    componentDidUpdate(PrevState,CurrentState){
+        if (PrevState != this.state.count){
           document.title = `Cliked ${this.state.count} times`
+        }
+        
     }
     
   render() {
