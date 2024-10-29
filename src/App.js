@@ -9,11 +9,16 @@ import ClassCounterOne from './components/ClassCounterOne';
 import HookCounterOne from './components/HookCounterOne';
 import ClassMouse from './components/ClassMouse';
 import HookMouse from './components/HookMouse';
+import MouseContainer from './components/MouseContainer';
+import IntervelClassCounter from './components/IntervelClassCounter';
+import IntervelHookCounter from './IntervelHookCounter';
+
 
 function App() {
   return (
-    <div className="App">
-      <HookMouse />
+    <div>
+      <IntervelClassCounter />
+      <IntervelHookCounter />
     </div>
   );
 }
