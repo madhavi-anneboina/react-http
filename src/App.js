@@ -12,13 +12,14 @@ import HookMouse from './components/HookMouse';
 import MouseContainer from './components/MouseContainer';
 import IntervelClassCounter from './components/IntervelClassCounter';
 import IntervelHookCounter from './IntervelHookCounter';
+import DataFetch from './components/DataFetch';
+import DataFetchId from './components/DataFetchId';
 
 
 function App() {
   return (
     <div>
-      <IntervelClassCounter />
-      <IntervelHookCounter />
+    <DataFetchId />
     </div>
   );
 }
