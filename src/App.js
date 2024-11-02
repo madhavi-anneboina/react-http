@@ -1,4 +1,5 @@
 import logo from './logo.svg';
+import React from 'react'
 import './App.css';
 import PostList from './components/PostList';
 import ClassCounter from './components/ClassCounter';
@@ -14,12 +15,19 @@ import IntervelClassCounter from './components/IntervelClassCounter';
 import IntervelHookCounter from './IntervelHookCounter';
 import DataFetch from './components/DataFetch';
 import DataFetchId from './components/DataFetchId';
+import ComponentC from './components/ComponentC';
 
-
+export const UserContext = React.createContext()
+export const ChannelContext = React.createContext()
 function App() {
+  
   return (
     <div>
-    <DataFetchId />
+   <UserContext.Provider value = {'madhavi'}>
+    <ChannelContext.Provider value = {'madhura'}>
+      <ComponentC />
+    </ChannelContext.Provider>
+   </UserContext.Provider>
     </div>
   );
 }
