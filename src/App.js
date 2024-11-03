@@ -16,6 +16,7 @@ import IntervelHookCounter from './IntervelHookCounter';
 import DataFetch from './components/DataFetch';
 import DataFetchId from './components/DataFetchId';
 import ComponentC from './components/ComponentC';
+import CounterOne from './components/CounterOne';
 
 export const UserContext = React.createContext()
 export const ChannelContext = React.createContext()
@@ -23,11 +24,12 @@ function App() {
   
   return (
     <div>
-   <UserContext.Provider value = {'madhavi'}>
+   {/* <UserContext.Provider value = {'madhavi'}>
     <ChannelContext.Provider value = {'madhura'}>
       <ComponentC />
     </ChannelContext.Provider>
-   </UserContext.Provider>
+   </UserContext.Provider> */}
+     <CounterOne />
     </div>
   );
 }
