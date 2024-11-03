@@ -8,6 +8,8 @@ const ComponentE = () => {
   return (
     <div>
        {value} - {user}
+       {value} - {user}
+
     </div>
   )
 }
